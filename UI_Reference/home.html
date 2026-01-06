@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Agency Landing Page</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#7f13ec",
+              "background-light": "#f7f6f8",
+              "background-dark": "#191022",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-[#E0E0E0]"
+  >
+    <div class="relative flex w-full flex-col">
+      <!-- TopNavBar -->
+      <header
+        class="sticky top-0 z-50 flex items-center justify-center border-b border-solid border-white/10 bg-background-dark/80 px-4 py-3 backdrop-blur-sm sm:px-8 md:px-10"
+      >
+        <div class="flex w-full max-w-7xl items-center justify-between">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-6">
+              <svg
+                fill="none"
+                viewbox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_6_330)">
+                  <path
+                    clip-rule="evenodd"
+                    d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </g>
+                <defs>
+                  <clippath id="clip0_6_330">
+                    <rect fill="white" height="48" width="48"></rect>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <h2
+              class="text-lg font-bold leading-tight tracking-[-0.015em] text-white"
+            >
+              Agency
+            </h2>
+          </div>
+          <div class="hidden items-center gap-8 md:flex">
+            <div class="flex items-center gap-8">
+              <a
+                class="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                href="#"
+                >Services</a
+              >
+              <a
+                class="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                href="#"
+                >Work</a
+              >
+              <a
+                class="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                href="#"
+                >About</a
+              >
+              <a
+                class="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                href="#"
+                >Contact</a
+              >
+            </div>
+            <button
+              class="flex h-10 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold leading-normal tracking-[0.015em] text-white ring-2 ring-primary ring-offset-2 ring-offset-background-dark transition-transform hover:scale-105"
+            >
+              <span class="truncate">Get a Quote</span>
+            </button>
+          </div>
+          <button class="md:hidden">
+            <span class="material-symbols-outlined text-white">menu</span>
+          </button>
+        </div>
+      </header>
+      <main class="flex flex-col items-center">
+        <div class="w-full max-w-7xl px-4 py-16 sm:px-8 md:px-10">
+          <!-- HeroSection -->
+          <section class="mb-24">
+            <div
+              class="flex min-h-[480px] flex-col items-center justify-center gap-6 rounded-xl border border-primary/50 bg-cover bg-center bg-no-repeat p-6 text-center shadow-lg shadow-primary/20 md:gap-8 md:p-10"
+              data-alt="Abstract purple and dark blue radial gradient background"
+              style="
+                background-image: linear-gradient(
+                    rgba(25, 16, 34, 0.8) 0%,
+                    rgba(25, 16, 34, 0.95) 100%
+                  ),
+                  url('https://lh3.googleusercontent.com/aida-public/AB6AXuCP5uyUGwPIK8MAj_e3wEgSu0unPbvfShtRh7-VVSkOTQCiSKyCR7SInfDeYiEicuRuDGGcf0n1bB-E_BDBTLVPnXbP6Y2D9FmPVKbOMnHbBj4OC-LCKuaTak8bgtabTzsaKjqLEBeaE3k_7PUAh6038V5PdAQpgNaHgRgBheBsJyxUJZCfronuVgJjT4TeJMpcUxwou9zDUVSq3FePbD47RrNIKpHfEAixHmrtX579HaWrdgudk1cRElKqoQ8EYZLZnKNxHe44Jqo0');
+              "
+            >
+              <div class="flex max-w-3xl flex-col gap-4">
+                <h1
+                  class="text-4xl font-black leading-tight tracking-tighter text-white sm:text-5xl md:text-6xl"
+                >
+                  We Build Digital Experiences That Convert
+                </h1>
+                <h2
+                  class="text-base font-normal leading-normal text-gray-300 sm:text-lg"
+                >
+                  Our agency is dedicated to creating innovative and effective
+                  solutions for our clients, driving growth and engagement
+                  through cutting-edge design and strategy.
+                </h2>
+              </div>
+              <div class="flex flex-wrap items-center justify-center gap-4">
+                <button
+                  class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-white ring-2 ring-primary ring-offset-2 ring-offset-background-dark transition-transform hover:scale-105"
+                >
+                  <span class="truncate">Let's Talk</span>
+                </button>
+                <button
+                  class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white/10 px-5 text-base font-bold leading-normal tracking-[0.015em] text-white ring-2 ring-white/20 ring-offset-2 ring-offset-background-dark transition-colors hover:bg-white/20"
+                >
+                  <span class="truncate">See Our Work</span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- Services Section -->
+          <section class="mb-24">
+            <!-- SectionHeader -->
+            <div class="mb-8 flex flex-col items-center text-center">
+              <h2
+                class="text-3xl font-bold leading-tight tracking-tight text-white md:text-4xl"
+              >
+                Our Core Services
+              </h2>
+              <p class="mt-2 max-w-2xl text-gray-400">
+                We offer a complete suite of services to help your business
+                thrive in the digital landscape.
+              </p>
+            </div>
+            <!-- TextGrid -->
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-primary/30 bg-white/5 p-6 transition-all duration-300 hover:border-primary hover:bg-primary/10 hover:shadow-2xl hover:shadow-primary/20"
+              >
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary"
+                >
+                  <span class="material-symbols-outlined text-3xl">code</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-lg font-bold leading-tight text-white">
+                    Web Design &amp; Development
+                  </h3>
+                  <p class="text-sm font-normal leading-normal text-gray-400">
+                    Crafting beautiful, high-performing websites tailored to
+                    your brand.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-primary/30 bg-white/5 p-6 transition-all duration-300 hover:border-primary hover:bg-primary/10 hover:shadow-2xl hover:shadow-primary/20"
+              >
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >campaign</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-lg font-bold leading-tight text-white">
+                    Digital Marketing
+                  </h3>
+                  <p class="text-sm font-normal leading-normal text-gray-400">
+                    Driving targeted traffic and leads through strategic online
+                    campaigns.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-primary/30 bg-white/5 p-6 transition-all duration-300 hover:border-primary hover:bg-primary/10 hover:shadow-2xl hover:shadow-primary/20"
+              >
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >palette</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-lg font-bold leading-tight text-white">
+                    Branding &amp; Identity
+                  </h3>
+                  <p class="text-sm font-normal leading-normal text-gray-400">
+                    Building memorable brand identities that resonate with your
+                    audience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- "Why Us" Section -->
+          <section class="mb-24">
+            <div
+              class="grid grid-cols-1 items-center gap-12 rounded-xl border border-primary/30 bg-white/5 p-8 lg:grid-cols-2 lg:gap-16 lg:p-12"
+            >
+              <div class="flex flex-col gap-4">
+                <h2
+                  class="text-3xl font-bold leading-tight tracking-tight text-white md:text-4xl"
+                >
+                  Why Partner With Us?
+                </h2>
+                <p class="text-base font-normal leading-normal text-gray-400">
+                  We combine creativity with technology to deliver results that
+                  matter. Our transparent process and expert team are dedicated
+                  to your success from start to finish.
+                </p>
+                <div class="mt-4 flex flex-col gap-6">
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >bar_chart</span
+                      >
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-white">Data-Driven Results</h4>
+                      <p class="text-sm text-gray-400">
+                        We leverage analytics to make informed decisions and
+                        optimize for success.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >groups</span
+                      >
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-white">Expert Team</h4>
+                      <p class="text-sm text-gray-400">
+                        Our team consists of industry veterans passionate about
+                        digital excellence.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >sync_alt</span
+                      >
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-white">Transparent Process</h4>
+                      <p class="text-sm text-gray-400">
+                        Stay informed with clear communication and regular
+                        updates throughout your project.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="relative h-64 w-full overflow-hidden rounded-lg lg:h-full"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  data-alt="A team of professionals collaborating around a laptop in a modern office."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCsjUyr9xJFycNECfDJ-ZlXFCpzU7NXxe9aq1BGBo-wNBW9wDQLfHJzGVqw5TMWlfL0cLuSBxs4vs0wUE4LRMZbFIAcGj6CKnbACTTPrsqIoWP1EcNzbSgvyNqTjnIWYGbcAmQfaQS0HewHo6K3aZ4IClsD8vkFG-PGt8NvAjxu443n-_-gKlqigO8b4ORsLR3nIKJAdc_ovWEXF4RDUgS6jyNMmr79gyGt29gdw3r74bjSfuzbjdjpIuwPEhhs34UUKwNg7dzA6wQ"
+                />
+              </div>
+            </div>
+          </section>
+          <!-- Call-to-Action Banner -->
+          <section>
+            <div
+              class="flex flex-col items-center justify-between gap-6 rounded-xl border border-primary bg-primary/10 px-6 py-10 text-center shadow-2xl shadow-primary/20 md:flex-row md:px-12 md:py-12 md:text-left"
+            >
+              <div class="flex flex-col gap-2">
+                <h2
+                  class="text-2xl font-bold tracking-tight text-white sm:text-3xl"
+                >
+                  Ready to Grow Your Business?
+                </h2>
+                <p class="max-w-xl text-gray-300">
+                  Let's work together to create something amazing. Contact us
+                  today for a free, no-obligation proposal.
+                </p>
+              </div>
+              <button
+                class="flex h-12 min-w-[84px] flex-shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-white ring-2 ring-primary ring-offset-2 ring-offset-background-dark transition-transform hover:scale-105"
+              >
+                <span class="truncate">Get Your Free Proposal</span>
+              </button>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer
+        class="flex justify-center border-t border-solid border-white/10 bg-[#141118]"
+      >
+        <div class="w-full max-w-7xl px-4 py-12 sm:px-8 md:px-10">
+          <div
+            class="flex flex-col items-center justify-between gap-8 md:flex-row"
+          >
+            <div
+              class="flex flex-col items-center gap-4 text-center md:items-start md:text-left"
+            >
+              <div class="flex items-center gap-3">
+                <div class="size-5">
+                  <svg
+                    fill="none"
+                    viewbox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_6_330_footer)">
+                      <path
+                        clip-rule="evenodd"
+                        d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_6_330_footer">
+                        <rect fill="white" height="48" width="48"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+                <h2 class="text-lg font-bold leading-tight text-white">
+                  Agency
+                </h2>
+              </div>
+              <p class="text-sm text-gray-400">
+                © 2024 Agency. All Rights Reserved.
+              </p>
+            </div>
+            <div class="flex items-center gap-6">
+              <a
+                class="text-gray-400 transition-colors hover:text-white"
+                data-alt="Twitter social media icon"
+                href="#"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewbox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 1.4 3.3 4.9 3.3 4.9-6.1 1.2-12.1 1.2-12.1 1.2s-3.2 0-5.6-.7c-2.4-.7-4.2-2.3-4.2-2.3s-1.8 4.2.5 6.1c2.3 1.9 5.2 2.6 5.2 2.6s-3.2 1.2-6.1-1.2c-2.9-2.4-2.1-7.8-2.1-7.8s1 .4 2.9.4c1.9 0 3.2-.4 3.2-.4s-2.1-1.2-2.9-3.2c-.8-2-1.2-4.5 1.2-6.1C7.8 2.1 9.1 1.4 9.1 1.4s1.9.4 3.2 2.1c1.3 1.7 1.2 3.2 1.2 3.2s2.9-.4 4.9-1.2c2-1.2 3.6-2.9 3.6-2.9z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="text-gray-400 transition-colors hover:text-white"
+                data-alt="LinkedIn social media icon"
+                href="#"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewbox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect height="12" width="4" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a
+                class="text-gray-400 transition-colors hover:text-white"
+                data-alt="GitHub social media icon"
+                href="#"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewbox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
