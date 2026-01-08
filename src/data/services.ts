@@ -133,11 +133,11 @@ export const services: Service[] = [
   {
     slug: "data-science",
     icon: "analytics",
-    title: "Data Science",
+    title: "Data Science & AI/ML",
     description:
       "Extracting insights from data using advanced statistical and computational techniques.",
     longDescription:
-      "We help businesses leverage their data to make informed decisions and gain a competitive edge through advanced analytics and machine learning.",
+      "We help businesses leverage their data to make informed decisions and gain a competitive edge through advanced analytics, machine learning, and LLM training.",
     subServices: [
       {
         title: "Predictive Analytics",
@@ -148,8 +148,14 @@ export const services: Service[] = [
         description: "Building intelligent systems that learn from data.",
       },
       {
-        title: "Data Visualization",
-        description: "Creating interactive dashboards to communicate insights.",
+        title: "LLM Training",
+        description:
+          "Custom fine-tuning and training of Large Language Models for specific business workflows.",
+      },
+      {
+        title: "Power BI Dashboard",
+        description:
+          "Advanced data visualization and business intelligence reporting with Power BI.",
       },
     ],
   },

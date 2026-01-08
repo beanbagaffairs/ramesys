@@ -12,6 +12,7 @@ export type CTAButton = {
   onClick?: () => void;
   variant?: "primary" | "secondary" | "outline" | "purple";
   size?: "sm" | "md" | "lg";
+  target?: string;
   className?: string;
 };
 
@@ -84,7 +85,7 @@ function renderActionButton(action: CTAButton, role: ButtonRole) {
 
   if (action.href) {
     return (
-      <Link href={action.href} className="inline-flex" prefetch={false}>
+      <Link href={action.href} target={action.target} className="inline-flex" prefetch={false}>
         {button}
       </Link>
     );

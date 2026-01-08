@@ -83,10 +83,10 @@ const Footer = () => {
               </Link>
             </div>
             <Link
-              href="mailto:contact@ramesys.com"
+              href="mailto:contact@ramesys.co.uk"
               className="text-gray-300 transition hover:text-white"
             >
-              contact@ramesys.com
+              contact@ramesys.co.uk
             </Link>
           </div>
         </div>

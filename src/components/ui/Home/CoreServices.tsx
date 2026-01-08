@@ -1,6 +1,9 @@
+import Link from "next/link";
 import { SectionHeader } from "../SectionHeader";
 import { ServiceCard } from "../ServiceCard";
 import { AnimatedGrid } from "../AnimatedSection";
+import { FadeIn } from "../FadeIn";
+import { Button } from "../Button";
 
 export default function CoreServices() {
   return (
@@ -14,24 +17,35 @@ export default function CoreServices() {
         <ServiceCard
           icon="language"
           title="Website Engineering"
+          href="/solutions/website-engineering"
           description="Custom-coded websites built with structured frontend and backend architecture, optimised for performance, security, and long-term scalability."
         />
         <ServiceCard
           icon="devices_other"
           title="Application Development"
+          href="/solutions/application-development"
           description="Web and mobile applications developed with modular logic, clean data flow, and systems that scale as features and users grow."
         />
         <ServiceCard
-          icon="home_repair_service"
-          title="Custom Software Systems"
-          description="Business software, dashboards, and internal tools engineered around workflows, integrations, and maintainable codebases."
+          icon="analytics"
+          title="Data Science & AI/ML"
+          href="/solutions/data-science"
+          description="Advanced data analytics, machine learning models, LLM training, and Power BI dashboards designed to extract actionable insights from your data."
         />
         <ServiceCard
           icon="campaign"
           title="Digital Marketing & Growth"
+          href="/solutions/digital-marketing-growth"
           description="Performance-focused digital marketing is built on data, tracking systems, and platforms designed to convert traffic into measurable growth."
         />
       </AnimatedGrid>
+      <FadeIn className="mt-12 flex justify-center">
+        <Link href="/solutions">
+          <Button variant="purple" size="lg" className="px-8">
+            See all solutions
+          </Button>
+        </Link>
+      </FadeIn>
     </section>
   );
 }

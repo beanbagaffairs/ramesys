@@ -33,7 +33,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     >
       <Card
         variant="service"
-        className="relative flex h-[300px] flex-col justify-between gap-3 bg-linear-to-bl from-[#140A28] via-[#090313] to-[#000101] py-6 cursor-pointer"
+        className="relative flex h-[320px] flex-col justify-between gap-3 bg-linear-to-bl from-[#140A28] via-[#090313] to-[#000101] py-8 px-6 cursor-pointer"
       >
         {typeof subServiceCount === "number" && subServiceCount >= 0 && (
           <div className="absolute right-6 top-6 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-white/80">
@@ -54,11 +54,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         >
           <span className="material-symbols-outlined text-3xl">{icon}</span>
         </motion.div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 pb-2">
           <h3 className="gradient-text text-3xl font-bold leading-tight text-white">
             {title}
           </h3>
-          <p className="text-md font-normal leading-normal text-gray-400">
+          <p className="text-sm font-normal leading-normal text-gray-400">
             {description}
           </p>
         </div>

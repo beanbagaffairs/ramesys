@@ -24,12 +24,12 @@ const contactDetails = [
   {
     icon: "phone",
     title: "Phone",
-    description: <p className="text-white/70">+91 1234567890</p>,
+    description: <p className="text-white/70">+44 7476 839088</p>,
   },
   {
     icon: "email",
     title: "Email",
-    description: <p className="text-white/70">contact@ramesys.com</p>,
+    description: <p className="text-white/70">contact@ramesys.co.uk</p>,
   },
   {
     icon: "schedule",
@@ -301,6 +301,43 @@ export function ContactFormSection() {
                 </div>
               ))}
             </AnimatedGrid>
+
+            <FadeIn delay={0.6} className="pt-8">
+              <h3 className="mb-4 text-lg font-semibold text-white/90">Quick Actions</h3>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="mailto:contact@ramesys.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-primary/50 hover:bg-primary/10"
+                >
+                  <span className="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">mail</span>
+                  Email Us
+                </a>
+                <a
+                  href="tel:+447476839088"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-emerald-500/50 hover:bg-emerald-500/10"
+                >
+                  <span className="material-symbols-outlined text-emerald-400 group-hover:scale-110 transition-transform">call</span>
+                  Call Now
+                </a>
+                <a
+                  href="https://wa.me/447476839088?text=Hi%20Ramesys%20team%2C%20I'm%20interested%20in%20starting%20a%20project..."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-[#25D366]/50 hover:bg-[#25D366]/10"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                    alt="WhatsApp"
+                    className="h-5 w-5 group-hover:scale-110 transition-transform"
+                  />
+                  WhatsApp
+                </a>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </div>
