@@ -24,7 +24,7 @@ const contactDetails = [
   {
     icon: "phone",
     title: "Phone",
-    description: <p className="text-white/70">+44 7476 839088</p>,
+    description: <p className="text-white/70">+91 79806 24524</p>,
   },
   {
     icon: "email",
@@ -315,7 +315,7 @@ export function ContactFormSection() {
                   Email Us
                 </a>
                 <a
-                  href="tel:+447476839088"
+                  href="tel:+917980624524"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-emerald-500/50 hover:bg-emerald-500/10"
@@ -324,7 +324,7 @@ export function ContactFormSection() {
                   Call Now
                 </a>
                 <a
-                  href="https://wa.me/447476839088?text=Hi%20Ramesys%20team%2C%20I'm%20interested%20in%20starting%20a%20project..."
+                  href="https://wa.me/917980624524?text=Hi%20Ramesys%20team%2C%20I'm%20interested%20in%20starting%20a%20project..."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-[#25D366]/50 hover:bg-[#25D366]/10"

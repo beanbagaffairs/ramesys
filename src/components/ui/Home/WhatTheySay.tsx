@@ -3,7 +3,7 @@ import { ClientTestimonialCard } from '../ClientTestimonialCard';
 
 const testimonials = [
   {
-    name: 'Arjun Sharma',
+    name: 'James Wilson',
     role: 'CTO, TechFlow India',
     rating: 5,
     imageSrc: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',

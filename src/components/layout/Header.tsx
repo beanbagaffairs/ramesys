@@ -26,8 +26,6 @@ const Header = () => {
         <Link href="/" className="group flex items-center text-white">
           <div className="relative flex h-14 w-auto items-center justify-center">
             {/* Prominent Shiny/Glow Effect */}
-            <div className="absolute inset-0 -z-10 bg-purple-500/60 blur-2xl group-hover:bg-purple-500/80 transition-all duration-500 rounded-full scale-150 animate-pulse" />
-            <div className="absolute inset-0 -z-10 bg-white/20 blur-xl group-hover:bg-white/40 transition-all duration-500 rounded-full scale-110" />
             <img 
               src="/logo.png" 
               alt="Ramesys Logo" 
@@ -46,7 +44,7 @@ const Header = () => {
                 className={cn(
                   'text-sm font-medium transition-colors',
                   isActive(item.href)
-                    ? 'text-white'
+                    ? 'text-primary'
                     : 'text-gray-300 hover:text-white'
                 )}
               >
@@ -79,7 +77,7 @@ const Header = () => {
                 className={cn(
                   'text-sm font-medium transition-colors',
                   isActive(item.href)
-                    ? 'text-white'
+                    ? 'text-primary'
                     : 'text-gray-300 hover:text-white'
                 )}
                 onClick={() => setIsMenuOpen(false)}

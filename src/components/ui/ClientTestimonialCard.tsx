@@ -112,7 +112,7 @@ export const ClientTestimonialCard: React.FC<ClientTestimonialCardProps> = ({
           <h3 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
             {name}
           </h3>
-          {role && <p className="text-sm uppercase tracking-[0.3em] text-white/60">{role}</p>}
+          {/* {role && <p className="text-sm uppercase tracking-[0.3em] text-white/60">{role}</p>} */}
         </motion.div>
 
         <motion.p 

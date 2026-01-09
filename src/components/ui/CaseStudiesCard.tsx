@@ -7,6 +7,8 @@ interface CaseStudy {
   title: string;
   description: string;
   imageUrl: string;
+  linkText?: string;
+  linkUrl?: string;
 }
 
 interface CaseStudiesCardProps {
@@ -36,11 +38,13 @@ export const CaseStudiesCard: React.FC<CaseStudiesCardProps> = ({ study }) => {
           <p className="text-sm text-zinc-200">{study.description}</p>
         </div>
         <a
-          className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all group-hover:gap-3"
-          href="#"
+          className="mt-4 inline-flex w-fit items-center justify-center gap-2 rounded-lg bg-primary px-6 h-11 text-sm font-bold text-white transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(127,19,236,0.3)]"
+          href={study.linkUrl || "#"}
+          target={study.linkUrl?.startsWith('http') ? "_blank" : undefined}
+          rel={study.linkUrl?.startsWith('http') ? "noopener noreferrer" : undefined}
         >
-          Learn More
-          <span className="material-symbols-outlined text-base">
+          {study.linkText || "Learn More"}
+          <span className="material-symbols-outlined text-base transition-transform group-hover:translate-x-1">
             arrow_forward
           </span>
         </a>
