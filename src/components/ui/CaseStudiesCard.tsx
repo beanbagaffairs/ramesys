@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { motion } from "motion/react";
 
@@ -40,8 +40,12 @@ export const CaseStudiesCard: React.FC<CaseStudiesCardProps> = ({ study }) => {
         <a
           className="mt-4 inline-flex w-fit items-center justify-center gap-2 rounded-lg bg-primary px-6 h-11 text-sm font-bold text-white transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(127,19,236,0.3)]"
           href={study.linkUrl || "#"}
-          target={study.linkUrl?.startsWith('http') ? "_blank" : undefined}
-          rel={study.linkUrl?.startsWith('http') ? "noopener noreferrer" : undefined}
+          target={study.linkUrl?.startsWith("http") ? "_blank" : undefined}
+          rel={
+            study.linkUrl?.startsWith("http")
+              ? "noopener noreferrer"
+              : undefined
+          }
         >
           {study.linkText || "Learn More"}
           <span className="material-symbols-outlined text-base transition-transform group-hover:translate-x-1">
