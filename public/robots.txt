@@ -1,0 +1,12 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api
+Disallow: /admin
+Disallow: /dashboard
+
+# Host
+Host: https://ramesys.co.uk
+
+# Sitemaps
+Sitemap: https://ramesys.co.uk/sitemap.xml

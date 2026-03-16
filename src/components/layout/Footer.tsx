@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -14,9 +14,17 @@ const Footer = () => {
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-24 sm:px-10 lg:px-12">
         <div className="flex items-center justify-between text-sm">
-          <p className="text-gray-400 md:justify-self-start">
-            © 2025 Ramesys. All Rights Reserved.
-          </p>
+          <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
+            <p className="text-gray-400">
+              © 2026 Ramesys. All Rights Reserved.
+            </p>
+            <Link
+              href="/privacy"
+              className="text-gray-500 hover:text-primary transition-colors text-xs"
+            >
+              Privacy Policy
+            </Link>
+          </div>
 
           <Link
             href="/"
@@ -25,9 +33,9 @@ const Footer = () => {
             <div className="relative flex items-center justify-center">
               {/* Prominent Shiny/Glow Effect */}
               <div className="absolute inset-0 -z-10 bg-purple-500/50 blur-xl group-hover:bg-purple-500/70 transition-all duration-500 rounded-full scale-150" />
-              <img 
-                src="/logo.png" 
-                alt="Ramesys Logo" 
+              <img
+                src="/logo.png"
+                alt="Ramesys Logo"
                 className="relative z-10 h-12 w-auto object-contain drop-shadow-[0_0_10px_rgba(168,85,247,0.4)]"
               />
             </div>
@@ -37,10 +45,10 @@ const Footer = () => {
           </Link>
 
           <div className="flex flex-col items-center gap-4 text-sm md:flex-row md:justify-end md:text-right">
-            <div className="flex flex-col items-end gap-1 text-gray-400 mr-4">
+            {/* <div className="flex flex-col items-end gap-1 text-gray-400 mr-4">
               <p>B1, 2nd floor, kali krishna abasan,</p>
               <p>galasara road, bally, howrah.</p>
-            </div>
+            </div> */}
             <div className="flex items-center gap-5 text-gray-400">
               <Link
                 href="https://www.instagram.com"

@@ -13,7 +13,10 @@ export default function CoreServices() {
         subtitle="Custom-coded digital systems designed to scale, perform, and integrate seamlessly with your business."
         badgeText="Services"
       />
-      <AnimatedGrid className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4" stagger={0.15}>
+      <AnimatedGrid
+        className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+        stagger={0.15}
+      >
         <ServiceCard
           icon="language"
           title="Website Engineering"

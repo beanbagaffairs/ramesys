@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Button } from "../Button";
 import { Card } from "../Card";
 import { SectionHeader } from "../SectionHeader";
@@ -265,6 +266,14 @@ export function ContactFormSection() {
                   {status.message}
                 </div>
               )}
+
+              <p className="text-xs text-white/40 text-center">
+                By sending this message, you agree to our{" "}
+                <Link href="/privacy" className="text-primary hover:underline underline-offset-4">
+                  Privacy Policy
+                </Link>
+                .
+              </p>
 
               <Button
                 variant="purple"

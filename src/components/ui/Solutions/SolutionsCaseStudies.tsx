@@ -1,47 +1,13 @@
+import Link from "next/link";
 import { CaseStudiesCard } from "../CaseStudiesCard";
 import { SectionHeader } from "../SectionHeader";
 import { AnimatedGrid } from "../AnimatedSection";
-
-const caseStudies = [
-  {
-    client: "BeanBagAffairs",
-    title: "Business Service Showcase",
-    description:
-      "A comprehensive digital platform designed to showcase the full range of services provided by the business with an intuitive user experience.",
-    imageUrl: "/images/BeanBagAffairs.png",
-    linkText: "Live",
-    linkUrl: "https://www.beanbagaffairs.com/",
-  },
-  {
-    client: "Vydhra",
-    title: "Online Education Platform",
-    description:
-      "A comprehensive online education platform offering dynamic learning experiences and resources to students worldwide.",
-    imageUrl: "/images/Vydhra.png",
-    linkText: "Live",
-    linkUrl: "https://vydhra.com",
-  },
-  {
-    client: "Soho",
-    title: "Ecommerce Mobile Application",
-    description:
-      "A feature-rich ecommerce mobile application delivering a seamless shopping experience with intuitive navigation and secure checkout.",
-    imageUrl: "/images/Soho.png",
-    linkText: "Learn More",
-    linkUrl: "#",
-  },
-  {
-    client: "Admin Dashboard",
-    title: "Custom Software Solutions",
-    description:
-      "Manage business effectively with custom softwares tailored to your operational needs.",
-    imageUrl: "/images/AdminDashboard.png",
-    linkText: "Learn More",
-    linkUrl: "#",
-  },
-];
+import { caseStudies } from "@/app/case-studies/data";
+import { Button } from "../Button";
 
 export function SolutionsCaseStudies() {
+  const featuredCaseStudies = caseStudies.slice(0, 3);
+
   return (
     <section className="space-y-10">
       <SectionHeader
@@ -53,10 +19,16 @@ export function SolutionsCaseStudies() {
         className="grid grid-cols-1 gap-6 md:grid-cols-3"
         stagger={0.2}
       >
-        {caseStudies.map((study) => (
-          <CaseStudiesCard key={study.title} study={study} />
+        {featuredCaseStudies.map((study) => (
+          <CaseStudiesCard key={study.slug} study={study} />
         ))}
       </AnimatedGrid>
+
+      <div className="flex justify-center pt-4">
+        <Button variant="purple" size="lg" className="px-8">
+          <Link href="/case-studies">View All Case Studies</Link>
+        </Button>
+      </div>
     </section>
   );
 }

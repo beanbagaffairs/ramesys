@@ -1,20 +1,21 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { Button } from '@/components/ui/Button';
-import { cn } from '@/lib/utils';
+import React, { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/Button";
+import { cn } from "@/lib/utils";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Solutions', href: '/solutions' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Home", href: "/" },
+    { name: "Solutions", href: "/solutions" },
+    { name: "Case Studies", href: "/case-studies" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const isActive = (href: string) => pathname === href;
@@ -26,9 +27,9 @@ const Header = () => {
         <Link href="/" className="group flex items-center text-white">
           <div className="relative flex h-14 w-auto items-center justify-center">
             {/* Prominent Shiny/Glow Effect */}
-            <img 
-              src="/logo.png" 
-              alt="Ramesys Logo" 
+            <img
+              src="/logo.png"
+              alt="Ramesys Logo"
               className="relative z-10 h-14 w-auto object-contain drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]"
             />
           </div>
@@ -42,10 +43,10 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  'text-sm font-medium transition-colors',
+                  "text-sm font-medium transition-colors",
                   isActive(item.href)
-                    ? 'text-primary'
-                    : 'text-gray-300 hover:text-white'
+                    ? "text-primary"
+                    : "text-gray-300 hover:text-white",
                 )}
               >
                 {item.name}
@@ -53,12 +54,14 @@ const Header = () => {
             ))}
           </nav>
           <Link href="/quote">
-            <Button variant="purple" size="sm">Get a Quote</Button>
+            <Button variant="purple" size="sm">
+              Get a Quote
+            </Button>
           </Link>
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -75,10 +78,10 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  'text-sm font-medium transition-colors',
+                  "text-sm font-medium transition-colors",
                   isActive(item.href)
-                    ? 'text-primary'
-                    : 'text-gray-300 hover:text-white'
+                    ? "text-primary"
+                    : "text-gray-300 hover:text-white",
                 )}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -86,7 +89,9 @@ const Header = () => {
               </Link>
             ))}
             <Link href="/quote" onClick={() => setIsMenuOpen(false)}>
-              <Button variant="purple" size="sm" className="mt-2 w-full">Get a Quote</Button>
+              <Button variant="purple" size="sm" className="mt-2 w-full">
+                Get a Quote
+              </Button>
             </Link>
           </nav>
         </div>
