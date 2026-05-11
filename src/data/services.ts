@@ -160,6 +160,42 @@ export const services: Service[] = [
     ],
   },
   {
+    slug: "ai-chatbot-development",
+    icon: "smart_toy",
+    title: "AI & Chatbot Development",
+    description:
+      "Custom AI-powered chatbots and conversational interfaces that automate customer interactions, streamline support, and drive engagement.",
+    longDescription:
+      "We design and develop intelligent chatbot systems and AI-powered conversational interfaces that transform how businesses interact with their customers. From custom LLM-based chatbots to voice-enabled assistants, we build solutions that understand context, learn from interactions, and deliver real business value.",
+    subServices: [
+      {
+        title: "Custom Chatbot Development",
+        description:
+          "Tailored conversational AI built on your business logic, data, and workflows.",
+      },
+      {
+        title: "AI-Powered Customer Support",
+        description:
+          "Automated support systems that understand queries and resolve issues intelligently.",
+      },
+      {
+        title: "Conversational AI & Voice Assistants",
+        description:
+          "Voice-enabled AI interfaces for hands-free, modern customer interactions.",
+      },
+      {
+        title: "LLM Fine-Tuning & Integration",
+        description:
+          "Custom-trained language models tailored to your domain and integrated into your workflows.",
+      },
+      {
+        title: "AI Strategy & Consulting",
+        description:
+          "Expert guidance on adopting and implementing AI solutions that align with your business goals.",
+      },
+    ],
+  },
+  {
     slug: "seo",
     icon: "search",
     title: "SEO",
@@ -186,7 +222,7 @@ export const services: Service[] = [
   },
   {
     slug: "deployment",
-    icon: "deployment",
+    icon: "rocket_launch",
     title: "Deployment",
     description:
       "Securing and managing your digital identity with reliable domain services.",
