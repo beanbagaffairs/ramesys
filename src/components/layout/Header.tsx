@@ -29,7 +29,7 @@ const Header = () => {
             {/* Prominent Shiny/Glow Effect */}
             <img
               src="/logo.png"
-              alt="Ramesys Logo"
+              alt="ramesys Logo"
               className="relative z-10 h-14 w-auto object-contain drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]"
             />
           </div>

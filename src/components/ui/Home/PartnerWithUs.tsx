@@ -7,12 +7,12 @@ import { FadeIn } from "../FadeIn";
 export function PartnerWithUs() {
   return (
     <section>
-      <SectionHeader badgeText="Partner With Ramesys" title="Partner With Ramesys" />
+      <SectionHeader badgeText="Partner with ramesys" title="Partner with ramesys" />
       <AnimatedSection className="grid grid-cols-1 items-center gap-12 rounded-xl border border-primary/50 p-8 lg:grid-cols-2 lg:gap-16 lg:p-12 bg-linear-to-bl from-[#140A28] via-[#090313] to-[#000101]">
         <div className="flex flex-col gap-4">
           <FadeIn delay={0.2} duration={0.6}>
             <h2 className="gradient-text text-2xl font-bold leading-tight tracking-tight text-white md:text-4xl">
-              Partner With Ramesys
+              Partner with ramesys
             </h2>
           </FadeIn>
           <FadeIn delay={0.4} duration={0.6}>

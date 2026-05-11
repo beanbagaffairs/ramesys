@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     value: "started",
-    question: "How do we get started with Ramesys?",
+    question: "How do we get started with ramesys?",
     answer:
       "You can start by booking a call with our team. We’ll discuss your requirements and recommend the right technical approach.",
   },

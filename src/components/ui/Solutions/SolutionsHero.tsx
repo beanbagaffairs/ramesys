@@ -8,7 +8,7 @@ export function SolutionsHero() {
         <SectionHeader
           badgeText="Solutions"
           title="What We Deliver"
-          subtitle="Ramesys provides engineering-led services focused on building scalable websites, applications, software systems, and data-driven digital growth solutions."
+          subtitle="ramesys provides engineering-led services focused on building scalable websites, applications, software systems, and data-driven digital growth solutions."
         />
         {/* <Button variant="purple" size="lg">Explore Our Services</Button> */}
       </div>

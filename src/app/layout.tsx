@@ -4,7 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "Ramesys - Digital Systems Engineered for Scale",
+  title: "ramesys - Digital Systems Engineered for Scale",
   description: "We build custom-coded digital systems, applications, and software designed to scale, perform, and integrate seamlessly with your business.",
   icons: {
     icon: "/logo.png",

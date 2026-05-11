@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
         <SectionHeader
           badgeText="Privacy Policy"
           title="Your Privacy Matters"
-          subtitle={`Last updated: ${lastUpdated}. This policy describes how Ramesys collects, uses, and protects your personal information.`}
+          subtitle={`Last updated: ${lastUpdated}. This policy describes how ramesys collects, uses, and protects your personal information.`}
           centered={true}
         />
 

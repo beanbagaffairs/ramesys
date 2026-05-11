@@ -9,7 +9,7 @@ const teamMembers = [
     imageUrl:
       '/images/Avinava.png',
     alt: 'Headshot of Avinava, Founder & Director',
-    description: 'Responsible for vision, strategy, client relationships, and steering Ramesys as it grows into a scalable technology company.'
+    description: 'Responsible for vision, strategy, client relationships, and steering ramesys as it grows into a scalable technology company.'
   },
   {
     name: 'Prasun',
@@ -39,7 +39,7 @@ export function AboutTeam() {
       <SectionHeader
         badgeText='Team'
         title="Meet the Team"
-        subtitle="Ramesys is led by a small, focused team that combines business direction, technical leadership, and hands-on development."
+        subtitle="ramesys is led by a small, focused team that combines business direction, technical leadership, and hands-on development."
       />
       <AnimatedGrid className="flex flex-wrap justify-center gap-10" stagger={0.15}>
         {teamMembers.map((member) => (

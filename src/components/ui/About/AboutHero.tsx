@@ -16,7 +16,7 @@ export function AboutHero() {
         <SectionHeader
           badgeText="About Us"
           title="Built on Engineering"
-          subtitle="Ramesys is a technology company focused on building scalable digital systems through clean code, strong architecture, and practical execution."
+          subtitle="ramesys is a technology company focused on building scalable digital systems through clean code, strong architecture, and practical execution."
         />
       </div>
     </section>

@@ -108,7 +108,7 @@ export const services: Service[] = [
     description:
       "Performance-focused digital marketing is built on data, tracking systems, and platforms designed to convert traffic into measurable growth.",
     longDescription:
-      "Our marketing work is tightly connected to the systems we build—never disconnected from data or technology. Marketing at Ramesys is treated as a system.",
+      "Our marketing work is tightly connected to the systems we build—never disconnected from data or technology. Marketing at ramesys is treated as a system.",
     subServices: [
       {
         title: "Performance Marketing",
@@ -185,9 +185,9 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "domain",
-    icon: "domain",
-    title: "Domain",
+    slug: "deployment",
+    icon: "deployment",
+    title: "Deployment",
     description:
       "Securing and managing your digital identity with reliable domain services.",
     longDescription:
@@ -255,6 +255,6 @@ export const getServiceBySlug = (slug: string) => {
   return services.find(
     (service) =>
       normalizeSlug(service.slug) === normalizedSlug ||
-      normalizeSlug(service.title) === normalizedSlug
+      normalizeSlug(service.title) === normalizedSlug,
   );
 };

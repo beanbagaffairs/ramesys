@@ -9,7 +9,7 @@ const testimonials = [
     imageSrc: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',
     comment: (
       <>
-        The team at <strong className="text-white">Ramesys</strong> understands architecture like no other agency. They didn&apos;t just build a website; they engineered a <strong className="text-white">scalable system</strong> that handles our growth effortlessly.
+        The team at <strong className="text-white">ramesys</strong> understands architecture like no other agency. They didn&apos;t just build a website; they engineered a <strong className="text-white">scalable system</strong> that handles our growth effortlessly.
       </>
     ),
   },
@@ -20,7 +20,7 @@ const testimonials = [
     imageSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg',
     comment: (
       <>
-        Switching to a <strong className="text-white">code-first approach</strong> with Ramesys was the best decision for our startup. No more page builder bloat—just pure performance and <strong className="text-white">clean code</strong>.
+        Switching to a <strong className="text-white">code-first approach</strong> with ramesys was the best decision for our startup. No more page builder bloat—just pure performance and <strong className="text-white">clean code</strong>.
       </>
     ),
   },

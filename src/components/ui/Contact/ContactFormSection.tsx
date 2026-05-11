@@ -333,7 +333,7 @@ export function ContactFormSection() {
                   Call Now
                 </a>
                 <a
-                  href="https://wa.me/917980624524?text=Hi%20Ramesys%20team%2C%20I'm%20interested%20in%20starting%20a%20project..."
+                  href="https://wa.me/917980624524?text=Hi%20ramesys%20team%2C%20I'm%20interested%20in%20starting%20a%20project..."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-[#25D366]/50 hover:bg-[#25D366]/10"

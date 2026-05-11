@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex items-center justify-between text-sm">
           <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
             <p className="text-gray-400">
-              © 2026 Ramesys. All Rights Reserved.
+              © 2026 ramesys. All Rights Reserved.
             </p>
             <Link
               href="/privacy"
@@ -35,12 +35,12 @@ const Footer = () => {
               <div className="absolute inset-0 -z-10 bg-purple-500/50 blur-xl group-hover:bg-purple-500/70 transition-all duration-500 rounded-full scale-150" />
               <img
                 src="/logo.png"
-                alt="Ramesys Logo"
+                alt="ramesys Logo"
                 className="relative z-10 h-12 w-auto object-contain drop-shadow-[0_0_10px_rgba(168,85,247,0.4)]"
               />
             </div>
             <span className="text-2xl font-semibold tracking-widest uppercase">
-              Ramesys
+              ramesys
             </span>
           </Link>
 
