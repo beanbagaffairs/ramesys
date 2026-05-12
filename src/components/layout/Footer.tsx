@@ -13,53 +13,20 @@ const Footer = () => {
       />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-24 sm:px-10 lg:px-12">
-        <div className="flex items-center justify-between text-sm">
-          <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
-            <p className="text-gray-400">
-              © 2026 ramesys. All Rights Reserved.
-            </p>
-            <Link
-              href="/privacy"
-              className="text-gray-500 hover:text-primary transition-colors text-xs"
-            >
-              Privacy Policy
-            </Link>
-          </div>
-
-          <Link
-            href="/"
-            className="group mx-auto flex items-center gap-3 text-white transition hover:opacity-90 md:mx-0"
-          >
-            <div className="relative flex items-center justify-center">
-              {/* Prominent Shiny/Glow Effect */}
-              <div className="absolute inset-0 -z-10 bg-purple-500/50 blur-xl group-hover:bg-purple-500/70 transition-all duration-500 rounded-full scale-150" />
-              <img
-                src="/logo.png"
-                alt="ramesys Logo"
-                className="relative z-10 h-12 w-auto object-contain drop-shadow-[0_0_10px_rgba(168,85,247,0.4)]"
-              />
-            </div>
-            <span className="text-2xl font-semibold tracking-widest uppercase">
-              ramesys
-            </span>
-          </Link>
-
-          <div className="flex flex-col items-center gap-4 text-sm md:flex-row md:justify-end md:text-right">
-            {/* <div className="flex flex-col items-end gap-1 text-gray-400 mr-4">
-              <p>B1, 2nd floor, kali krishna abasan,</p>
-              <p>galasara road, bally, howrah.</p>
-            </div> */}
-            <div className="flex items-center gap-5 text-gray-400">
+        <div className="flex flex-col items-center gap-12 text-center">
+          {/* Social Links */}
+          <div className="flex flex-col items-center gap-6">
+            <div className="flex items-center gap-5">
               <Link
                 href="https://www.instagram.com"
-                className="transition hover:text-white"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:text-white hover:shadow-[0_0_20px_rgba(127,19,236,0.3)]"
                 aria-label="Instagram"
                 target="_blank"
                 rel="noreferrer"
               >
                 <svg
                   aria-hidden="true"
-                  className="size-5"
+                  className="size-6"
                   fill="none"
                   stroke="currentColor"
                   strokeLinecap="round"
@@ -74,14 +41,14 @@ const Footer = () => {
               </Link>
               <Link
                 href="https://www.linkedin.com"
-                className="transition hover:text-white"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:text-white hover:shadow-[0_0_20px_rgba(127,19,236,0.3)]"
                 aria-label="LinkedIn"
                 target="_blank"
                 rel="noreferrer"
               >
                 <svg
                   aria-hidden="true"
-                  className="size-5"
+                  className="size-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -92,10 +59,62 @@ const Footer = () => {
             </div>
             <Link
               href="mailto:contact@ramesys.co.uk"
-              className="text-gray-300 transition hover:text-white"
+              className="group flex items-center gap-3 rounded-full border border-white/5 bg-white/[0.03] px-6 py-2.5 text-sm text-gray-400 transition-all hover:border-primary/30 hover:bg-primary/5 hover:text-white"
             >
-              contact@ramesys.co.uk
+              <svg
+                className="size-5 text-primary/70 transition-colors group-hover:text-primary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <span className="tracking-wide">contact@ramesys.co.uk</span>
             </Link>
+          </div>
+
+          {/* Branding */}
+          <Link
+            href="/"
+            className="group flex flex-col items-center gap-6 text-white transition hover:opacity-90"
+          >
+            <div className="relative flex items-center justify-center">
+              <div className="absolute inset-0 -z-10 bg-primary/40 blur-2xl group-hover:bg-primary/60 transition-all duration-700 rounded-full scale-150" />
+              <img
+                src="/logo.png"
+                alt="RAMESYS Logo"
+                className="relative z-10 h-20 w-auto object-contain transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <span className="text-4xl font-bold tracking-[0.5em] uppercase gradient-text">
+              RAMESYS
+            </span>
+          </Link>
+
+          {/* Copyright & Policy */}
+          <div className="flex flex-col items-center gap-4 text-sm">
+            <p className="text-gray-500/80">
+              © 2026 RAMESYS. All Rights Reserved.
+            </p>
+            <div className="flex gap-6">
+              <Link
+                href="/privacy"
+                className="text-gray-600 hover:text-primary transition-colors text-xs"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className="text-gray-600 hover:text-primary transition-colors text-xs"
+              >
+                Terms of Service
+              </Link>
+            </div>
           </div>
         </div>
       </div>
