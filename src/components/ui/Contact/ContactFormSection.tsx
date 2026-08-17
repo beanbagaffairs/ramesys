@@ -11,14 +11,14 @@ import { FadeIn } from "../FadeIn";
 const contactDetails = [
   {
     icon: "location_on",
-    title: "Office Address",
+    title: "Corporate Address",
     description: (
       <p className="text-white/70">
-        B1, 2nd floor, kali krishna abasan,
+        Godrej Genesis, 16th floor Unit 1604,
         <br />
-        galasara road, bally,
+        Street Number 18 EP & GP block salt lake sector V,
         <br />
-        howrah.
+        Bidhannagar
       </p>
     ),
   },
@@ -65,7 +65,7 @@ export function ContactFormSection() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -269,7 +269,10 @@ export function ContactFormSection() {
 
               <p className="text-xs text-white/40 text-center">
                 By sending this message, you agree to our{" "}
-                <Link href="/privacy" className="text-primary hover:underline underline-offset-4">
+                <Link
+                  href="/privacy"
+                  className="text-primary hover:underline underline-offset-4"
+                >
                   Privacy Policy
                 </Link>
                 .
@@ -312,7 +315,9 @@ export function ContactFormSection() {
             </AnimatedGrid>
 
             <FadeIn delay={0.6} className="pt-8">
-              <h3 className="mb-4 text-lg font-semibold text-white/90">Quick Actions</h3>
+              <h3 className="mb-4 text-lg font-semibold text-white/90">
+                Quick Actions
+              </h3>
               <div className="flex flex-wrap gap-3">
                 <a
                   href="mailto:contact@ramesys.co.uk"
@@ -320,7 +325,9 @@ export function ContactFormSection() {
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-primary/50 hover:bg-primary/10"
                 >
-                  <span className="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">mail</span>
+                  <span className="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">
+                    mail
+                  </span>
                   Email Us
                 </a>
                 <a
@@ -329,7 +336,9 @@ export function ContactFormSection() {
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-emerald-500/50 hover:bg-emerald-500/10"
                 >
-                  <span className="material-symbols-outlined text-emerald-400 group-hover:scale-110 transition-transform">call</span>
+                  <span className="material-symbols-outlined text-emerald-400 group-hover:scale-110 transition-transform">
+                    call
+                  </span>
                   Call Now
                 </a>
                 <a

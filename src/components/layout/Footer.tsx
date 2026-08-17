@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="flex flex-col items-center gap-6">
             <div className="flex items-center gap-5">
               <Link
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/ramesysinternational?igsh=ejhjMTIwOXVibG13&utm_source=qr"
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:text-white hover:shadow-[0_0_20px_rgba(127,19,236,0.3)]"
                 aria-label="Instagram"
                 target="_blank"
@@ -40,7 +40,7 @@ const Footer = () => {
                 </svg>
               </Link>
               <Link
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/ramesysitsolution/"
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:text-white hover:shadow-[0_0_20px_rgba(127,19,236,0.3)]"
                 aria-label="LinkedIn"
                 target="_blank"
