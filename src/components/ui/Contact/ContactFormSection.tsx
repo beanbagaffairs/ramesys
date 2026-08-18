@@ -10,19 +10,6 @@ import { FadeIn } from "../FadeIn";
 
 const contactDetails = [
   {
-    icon: "location_on",
-    title: "Corporate Address",
-    description: (
-      <p className="text-white/70">
-        Godrej Genesis, 16th floor Unit 1604,
-        <br />
-        Street Number 18 EP & GP block salt lake sector V,
-        <br />
-        Bidhannagar
-      </p>
-    ),
-  },
-  {
     icon: "phone",
     title: "Phone",
     description: <p className="text-white/70">+91 79806 24524</p>,
@@ -292,6 +279,7 @@ export function ContactFormSection() {
         </AnimatedSection>
 
         <div className="space-y-8">
+          {/* Contact Details Section */}
           <div className="space-y-6">
             <FadeIn delay={0.4}>
               <h2 className="text-2xl font-bold gradient-text">
@@ -314,7 +302,7 @@ export function ContactFormSection() {
               ))}
             </AnimatedGrid>
 
-            <FadeIn delay={0.6} className="pt-8">
+            <FadeIn delay={0.6} className="pt-4">
               <h3 className="mb-4 text-lg font-semibold text-white/90">
                 Quick Actions
               </h3>
@@ -357,6 +345,93 @@ export function ContactFormSection() {
               </div>
             </FadeIn>
           </div>
+
+          {/* Company & Registration Details (Separated Card) */}
+          <FadeIn delay={0.7}>
+            <Card
+              variant="feature"
+              className="p-6 bg-linear-to-bl from-[#140A28]/90 via-[#090313]/90 to-[#000101] border border-white/10 space-y-6"
+            >
+              <div>
+                <p className="text-xs uppercase tracking-wider font-bold text-primary mb-1">
+                  Legal Entity Information
+                </p>
+                <h3 className="text-xl font-bold text-white">
+                  Ramesys Private Limited
+                </h3>
+              </div>
+
+              <div className="space-y-4 pt-2 border-t border-white/10">
+                <div className="flex items-start gap-3">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/20 text-primary shrink-0">
+                    <span className="material-symbols-outlined text-xl">
+                      badge
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-white/50 uppercase tracking-wider mb-0.5">
+                      CIN
+                    </p>
+                    <p className="text-sm font-bold text-white/90">
+                      U62011WR2026PTC292702
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/20 text-primary shrink-0">
+                    <span className="material-symbols-outlined text-xl">
+                      receipt_long
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-white/50 uppercase tracking-wider mb-0.5">
+                      GST
+                    </p>
+                    <p className="text-sm font-bold text-white/90">
+                      19AAPCR6449A1Z2
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/20 text-primary shrink-0">
+                    <span className="material-symbols-outlined text-xl">
+                      apartment
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-white/50 uppercase tracking-wider mb-0.5">
+                      Corporate Address
+                    </p>
+                    <p className="text-xs text-white/80 leading-relaxed">
+                      Godrej Genesis, 16th floor Unit 1604, Street Number 18 EP
+                      & GP block salt lake sector V, Bidhannagar, West Bengal
+                      700091
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/20 text-primary shrink-0">
+                    <span className="material-symbols-outlined text-xl">
+                      home_pin
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-white/50 uppercase tracking-wider mb-0.5">
+                      Registered Address
+                    </p>
+                    <p className="text-xs text-white/80 leading-relaxed">
+                      Uttarpara, Hooghly,712258, 1 Radhika Charan Chatter,
+                      Uttarpara, Hooghly, Serampur Uttarpara, West Bengal,
+                      India, 712258
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </FadeIn>
         </div>
       </div>
     </section>
